@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarnRise - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #004aad, #f5c542);
+    }
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #004aad;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .login-box button {
+      width: 100%;
+      background: #004aad;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: #f5c542;
+      color: #000;
+    }
+    .login-box p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .login-box a {
+      color: #004aad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login to EarnRise</h2>
+    <form>
+      <input type="text" placeholder="Enter Username" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don’t have an account? <a href="register.html">Register</a></p>
+  </div>
+
+</body>
+</html>
