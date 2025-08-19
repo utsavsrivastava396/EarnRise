@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EarnRise — Learn & Earn</title>
+  <meta name="description" content="EarnRise is a professional MLM platform with user dashboard, admin panel, referral earnings, UPI payouts and manual approvals." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    /* === Critical (inline) styles for instant good look; full theme in style.css === */
+    :root{
+      --bg:#0b1220;--card:#101a2e;--text:#e8eefc;--muted:#a9b4cf;--primary:#3a86ff;--gold:#f7b500;--gold2:#ffd86b;--line:#1b2744;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 70% 0%, rgba(58,134,255,.25), transparent 60%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:#6ee7f9;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#5fa0ff)}
+    .btn{background:linear-gradient(90deg,var(--primary),#5fa0ff);color:#fff;padding:12px 16px;border:none;border-radius:12px;font-weight:800;box-shadow:0 8px 24px rgba(58,134,255,.25);cursor:pointer}
+    .btn.secondary{background:#1b2540;border:1px solid #223055;color:#e8eefc}
+    .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin-top:8px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:20px;backdrop-filter:blur(8px)}
+    .h1{font-size:44px;line-height:1.08;margin:0 0 10px}
+    .sub{color:var(--muted)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+    .kpi{background:#0e182c;border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px}
+    .pill{padding:6px 10px;border-radius:999px;font-size:12px;background:#112345;display:inline-block}
+    .footer{color:#98a4c5;font-size:13px;padding:18px 0 40px;text-align:center}
+    .notice{background:#0e1b34;border:1px dashed #27407a;border-radius:14px;padding:12px 14px;color:#bcd3ff}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <div class="nav container">
+    <div class="brand">
+      <!-- Use your fixed blue-gold logo image in /assets if you have it -->
+      <img src="assets/logo.svg" alt="EarnRise" style="width:40px;height:40px;border-radius:12px;object-fit:cover;display:block" onerror="this.style.display='none'">
+      <div>
+        <div style="font-weight:800;font-size:18px">EarnRise</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px">Founder: Utsav Srivastava</div>
+      </div>
+    </div>
+    <div class="row">
+      <a class="btn secondary" href="index.html">Home</a>
+      <a class="btn secondary" href="login.html">Login</a>
+      <a class="btn secondary" href="register.html">Register</a>
+      <a class="btn" href="dashboard.html">Dashboard</a>
+      <a class="btn" href="admin.html">Admin</a>
+    </div>
+  </div>
+
+  <!-- Hero + Quick Join -->
+  <div class="container hero">
+    <div class="card">
+      <div class="pill" style="background:linear-gradient(90deg,var(--gold),var(--gold2));color:#1a1a1a;font-weight:800;">GRAND LAUNCH</div>
+      <h1 class="h1">Start with ₹299. Earn ₹200 per valid referral.</h1>
+      <p class="sub">Minimum withdrawal ₹600 • UPI payouts • Admin approval</p>
+      <div style="height:8px"></div>
+      <div class="row">
+        <a class="btn" href="register.html">Create Account</a>
+        <a class="btn secondary" href="login.html">Already a member? Login</a>
+      </div>
+      <div style="height:16px"></div>
+      <div class="grid">
+        <div class="kpi"><div class="pill">Mobile-first</div><h3>Fast & Smooth</h3><div class="sub">Works great on phones</div></div>
+        <div class="kpi"><div class="pill">Direct Bonus</div><h3>₹200 / Referral</h3><div class="sub">Credited on approval</div></div>
+        <div class="kpi"><div class="pill">Secure</div><h3>Manual Approval</h3><div class="sub">UPI proof verification</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Activate via UPI</h3>
+      <p class="sub">Scan & pay ₹299 (demo). Replace QR with your real UPI for production.</p>
+      <div style="display:grid;gap:10px">
+        <img src="assets/qr.png" alt="UPI QR" style="width:260px;max-width:100%;border-radius:12px;border:1px solid var(--line)" onerror="this.style.display='none'">
+        <div class="notice">No Razorpay? No problem. Use your UPI QR and manual admin approval.</div>
+        <div class="row">
+          <a class="btn" href="register.html">Register & Submit Txn</a>
+          <a class="btn secondary" href="dashboard.html">Go to Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About / Highlights -->
+  <div class="container card" style="margin-top:16px">
+    <h3>About EarnRise</h3>
+    <p class="sub">
+      EarnRise is a professional MLM platform with user dashboard, admin panel, referral earnings (₹200 per valid join),
+      UPI payouts, manual approval, and an easy mobile-first experience. Founder face reveal at 50,000 members milestone.
+    </p>
+    <div class="row" style="margin-top:8px">
+      <div class="pill">Join Fee ₹299</div>
+      <div class="pill">Min Withdraw ₹600</div>
+      <div class="pill">UPI • Admin Approval</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="container" style="margin-top:16px">
+    <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <h3>Ready to grow with EarnRise?</h3>
+        <div class="sub">Create your account now and start inviting your network.</div>
+      </div>
+      <div class="row">
+        <a class="btn" href="register.html">Get Started</a>
+        <a class="btn secondary" href="admin.html">Admin Panel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container footer">© 2025 EarnRise · All rights reserved</div>
+
+  <!-- Link your main JS (logic will be in script.js we add next) -->
+  <script src="script.js"></script>
+</body>
+</html>
