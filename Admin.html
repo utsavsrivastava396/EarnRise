@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarnRise - Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f3f6fa;
+    }
+    .admin-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    .admin-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .admin-header h1 {
+      color: #1a73e8;
+    }
+    .admin-section {
+      margin-bottom: 30px;
+    }
+    .admin-section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #1a73e8;
+      color: white;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      margin-top: 10px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0c56c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-header">
+      <h1>📊 EarnRise - Admin Panel</h1>
+      <p>Welcome, Admin! Manage your users & earnings here.</p>
+    </div>
+
+    <!-- Users Section -->
+    <div class="admin-section">
+      <h2>👥 Registered Users</h2>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Total Earnings</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ravi Kumar</td>
+          <td>ravi@example.com</td>
+          <td>₹5,000</td>
+          <td><a href="#" class="btn">View</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Priya Sharma</td>
+          <td>priya@example.com</td>
+          <td>₹3,200</td>
+          <td><a href="#" class="btn">View</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Earnings Section -->
+    <div class="admin-section">
+      <h2>💰 Total Earnings Overview</h2>
+      <p><strong>Total Users:</strong> 2</p>
+      <p><strong>Total Earnings:</strong> ₹8,200</p>
+      <a href="#" class="btn">Download Report</a>
+    </div>
+
+    <!-- Withdrawals Section -->
+    <div class="admin-section">
+      <h2>🏦 Withdrawal Requests</h2>
+      <table>
+        <tr>
+          <th>User</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Ravi Kumar</td>
+          <td>₹2,000</td>
+          <td>Pending</td>
+          <td>
+            <a href="#" class="btn">Approve</a>
+            <a href="#" class="btn">Reject</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
